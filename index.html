@@ -1,25 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <title>GL Video</title>
+    <meta name="description" content="GL Video Example" />
+    <meta name="author" content="ypk" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-  <title>GL Video</title>
-  <meta name="description" content="GL Video Example">
-  <meta name="author" content="ypk">
+  <body>
+    <video
+      id="dynamic-video"
+      controls="false"
+      loop="true"
+      crossorigin="anonymous"
+    >
+      <source src="static/video.mp4" type="video/mp4" />
+    </video>
 
-  <link rel="stylesheet" href="src/style.css">
+    <canvas id="video-canvas"></canvas>
 
-</head>
-
-<body>
-
-  <video id="dynamic-video" controls="false"  loop="true"  crossorigin="anonymous">
-    <source src="static/video.mp4" type="video/mp4">
-  </video>
-  
-  <canvas id="video-canvas"></canvas>
-
-  <script src="src/script.js"></script>
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
